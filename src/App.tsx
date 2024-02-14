@@ -2,9 +2,9 @@ import { WeatherCard } from './components/WeatherCard/WeatherCard';
 import { useEffect, useState } from 'react';
 import { fetchLocalData } from './utils/getLocalWeather';
 import { WeatherData } from './types/types';
-import styles from './app.module.scss';
 import { SearchInput } from './components/SearchInput/SearchInput';
 import { useTheme } from './context/ThemeContext';
+import './index.scss'
 
 export default function App() {
 
@@ -38,7 +38,7 @@ export default function App() {
 
       <SearchInput />
 
-      <div className={styles.cards}>
+      <div className="cards">
         {weatherLocalData && (<WeatherCard weather={weatherLocalData} />)}
       </div>
     </main>

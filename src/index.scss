@@ -44,3 +44,10 @@ h1 {
 .nighttime {
   background-image: linear-gradient(to top, #182631 0%, #36556e 100%);
 }
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
