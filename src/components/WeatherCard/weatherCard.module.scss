@@ -1,0 +1,60 @@
+.card {
+    max-height: 480px;
+    max-width: 380px;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    // This hype glassmorphic effect... for how long the hype ???
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        &--location {
+            position: relative;
+            
+            span {
+                position: absolute;
+                right: -1.75rem;
+                top: -.5rem;
+                color: black;
+                background-color: whitesmoke;
+                border-radius: 2rem;
+                padding: 0 .5rem;
+                font-size: .8rem;
+            }
+        }
+
+        &--temp {
+            font-size: 8rem;
+            line-height: 1;
+            letter-spacing: -5px;
+            font-weight: 700;
+            margin-bottom: -7rem;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        div:last-child {
+            text-align: right;
+        }
+    }
+}
+
+.model {
+    min-height: 260px;
+}

@@ -1,0 +1,41 @@
+.search-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: .7rem;
+
+    &__input {
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        padding: 0.2rem 0.75rem;
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.17 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        input[type="text"] {
+            color: whitesmoke;
+            background: transparent;
+            outline: none;
+            border: none;
+            font-size: .8rem;
+
+        }
+        ::placeholder {
+            color: whitesmoke;
+            font-size: .8rem;
+            font-weight: 400;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: whitesmoke;
+        }
+    }
+}
