@@ -18,17 +18,18 @@
         
 
         &--location {
-            position: relative;
+            h2 {
+                display: inline;
+                margin-right: .5rem;
+            }
             
             span {
-                position: absolute;
-                right: -1.75rem;
-                top: -.5rem;
                 color: black;
                 background-color: whitesmoke;
                 border-radius: 2rem;
                 padding: 0 .5rem;
                 font-size: .8rem;
+                position: absolute;
             }
         }
 
