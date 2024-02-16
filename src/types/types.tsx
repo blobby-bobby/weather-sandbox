@@ -16,17 +16,13 @@ export interface WeatherData {
     }
   }
 
-interface SplineData {
-  main: string, 
-  urlId: string,
+export enum SplineGroup3D {
+  Thunderstorm = "l8nwvhrL1sCwKvjb",
+  Drizzle = "l8nwvhrL1sCwKvjb",
+  Rain = "l8nwvhrL1sCwKvjb",
+  Snow = "l8nwvhrL1sCwKvjb",
+  Atmosphere = "l8nwvhrL1sCwKvjb",
+  ClearNight = "5nWvSaiVjSstpT9J",
+  ClearDay = "k9Vs3ChSVQ0wCXXC",
+  Clouds = "l8nwvhrL1sCwKvjb"
 }
-
-export const SplineSelectionDay: SplineData[] = [
-    {main: "Thunderstorm", urlId: ""},
-    {main: "Drizzle", urlId: ""},
-    {main: "Rain", urlId: ""},
-    {main: "Snow", urlId: ""},
-    {main: "Atmosphere", urlId: ""},
-    {main: "Clear", urlId: ""},
-    {main: "Clouds", urlId: ""},
-]

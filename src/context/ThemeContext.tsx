@@ -12,7 +12,7 @@ interface ThemeProviderProps {
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: FunctionComponent<ThemeProviderProps> = (props) => {
-  const [theme, setTheme] = useState<string>('daytime');
+  const [theme, setTheme] = useState('daytime');
 
   // apparemment pour éviter les re-renders inutiles
   const lastSetTimeRef = useRef<number>(0);
@@ -23,7 +23,7 @@ export const ThemeProvider: FunctionComponent<ThemeProviderProps> = (props) => {
     if (Math.abs(hour - lastSetTimeRef.current) > 0.5) {
       lastSetTimeRef.current = hour;
 
-      // mon échelle jour-nuit 
+      // mon échelle jour-nuit : true entre 6 heures du matin et 18 heures
       const shouldSetDaytime = hour >= 6 && hour < 17; 
       
       setTheme((prevTheme) => (prevTheme === 'daytime' && !shouldSetDaytime ? 'nighttime' : prevTheme === 'nighttime' && shouldSetDaytime ? 'daytime' : prevTheme));
